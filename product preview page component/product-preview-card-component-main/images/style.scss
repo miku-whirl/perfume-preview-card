@@ -1,0 +1,120 @@
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --sizep: 14px;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: var(--Cream);
+    display:flex;
+    flex-direction: columns; // optional, use if you have a slibing element apart from your card
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Montserrat';
+
+    .container{
+        width: 355px;
+        height: 650px;
+        background-color: var(--White);
+        border-radius: 2%;
+    }
+
+    .mobile {
+        width: 100%;
+        border-radius: 2% 2% 0% 0%;
+    }
+
+    .upper{
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        transform: scale(1, .9);
+        color: var(--Darkgrayishblue);
+    }
+    p {
+        color: var(--Darkgrayishblue); 
+    }
+
+    .text {
+        text-align: left;
+        width:93%;
+        margin-left: 19px;
+    }
+    .main {
+        color: var(--Verydarkblue);
+        margin-top: -6px;
+        line-height: 2rem;
+        transform: scale(1, 0.95);
+        font-family: 'Fraunces';
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            text-decoration-style: 1px;
+        }
+        
+    }
+
+    p {
+        line-height: 1.5rem;
+        width:96%;
+        font-size: 15px;
+        transform: scale(1, .9);
+    }
+
+    .price-main {
+        color: var(--Darkcyan);
+        margin-top: -5px;
+        font-family: 'Fraunces';
+    }
+
+    .price-sub {
+        margin-left: 20px;
+        margin-top: 1px;
+        text-decoration: line-through;
+        transform: scale(1, .9);
+    }
+
+    .price {
+        display: flex;
+    }
+
+    .add-to-cart {
+        display: flex;
+        width: 300px;
+        height: 50px;
+        background-color: var(--Darkcyan);
+        margin-left: 8px;
+        border-radius: 10px;
+        align-items: center;
+
+        &:hover {
+            background-color: hsl(138, 81%, 10%);
+            transform: scale(1.01);
+            cursor: pointer;
+        }
+    }
+
+    .add {
+        color: var(--White);
+        margin-left: 10px;
+        transform: scale(1, .9);
+    }
+
+    .svg {
+        width: 15px;
+        height: 16px;
+        margin-left: 85px;
+    }
+}
+
+.desktop {
+    display: none;
+}
