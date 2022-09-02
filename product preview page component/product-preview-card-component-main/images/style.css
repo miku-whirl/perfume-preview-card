@@ -24,7 +24,6 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: "Montserrat";
-  margin: 0px;
 }
 body .container {
   width: 355px;
@@ -56,7 +55,6 @@ body .main {
   line-height: 2rem;
   transform: scale(1, 0.95);
   font-family: "Fraunces";
-  font-size: 2rem;
 }
 body .main:hover {
   text-decoration: underline;
@@ -108,58 +106,7 @@ body .svg {
   height: 16px;
   margin-left: 85px;
 }
-body .img:hover {
-  cursor: pointer;
-  opacity: 0.97;
-}
 
 .desktop {
   display: none;
-}
-
-@media only screen and (min-width: 900px) {
-  .mobile {
-    display: none;
-  }
-  .main {
-    width: 60%;
-  }
-  .desc2 {
-    width: 75%;
-  }
-  body .text {
-    margin-left: 38px;
-    margin-top: 30px;
-  }
-  .price-main, .price-sub {
-    padding-top: 15px;
-  }
-  body .add-to-cart {
-    margin-top: 15px;
-    margin-left: -1px;
-  }
-  body .container {
-    height: 473px;
-    width: 355px;
-    border-radius: 0 2% 2% 0;
-    margin-left: 22.375em;
-    position: absolute;
-  }
-  .desktop {
-    display: block;
-    position: absolute;
-    width: 355px;
-    height: 473px;
-    width: 100%;
-    margin-left: -355px;
-    border-radius: 2% 0 0 2%;
-  }
-}
-@media only screen and (min-width: 585px) {
-  body .container {
-    width: 367px;
-  }
-  .add-to-cart {
-    margin-left: 15px;
-  }
 }/*# sourceMappingURL=style.css.map */
